@@ -1,0 +1,49 @@
+.container{
+    display: grid;
+    gap:5px;
+    width:90%;
+    height: 80%;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    padding:5px;
+    background-color: seagreen;
+    font-size: 15px;
+    margin:auto;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    /* grid-row-start: 3;
+    grid-row-end:8; */
+
+}
+.main{
+background-color: cyan;
+width:80%;
+height:60%;
+
+}
+
+div{
+    border-bottom: 1px solid black;
+  border-right: 1px solid black;
+
+}
+.heading,.break{
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    text-align: center;
+    margin:5px;
+    font-size: 20px;
+    
+   
+}
+/* .holiday{
+    grid-row-start: 3;
+    grid-row-end: 5;
+  
+    
+    
+} */
+/* .holiday{
+    grid-column: 2;
+    grid-row:1/9;
+} */

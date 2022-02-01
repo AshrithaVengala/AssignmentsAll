@@ -1,0 +1,63 @@
+
+$margin:20px;
+$color2:rgb(230, 150, 150);
+$color1:skyblue ;
+$padding:20px;
+*{
+    padding: $padding;
+    margin: $margin;
+}
+@mixin pos($height,$width) {
+    height:$height;
+    width: $width;  
+    
+}
+@mixin button(){
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+    border-radius: 20px;
+    width: 300px;
+
+}
+.container{
+    display: flex;
+    border-color: black;
+    background-color:rgb(136, 136, 104) ;
+    .left{
+        @include pos(700px,600px);
+    }
+    .right{
+        @include pos(700px,500px );
+        .button{
+            @include button();
+ }       
+}
+}
+#theme-1{
+        .container{
+           .left{
+              background-color:$color1 ; 
+           }
+           .right{
+               background-color:darken($color1,40%);
+               .button{
+                   background-color: $color2;
+               }
+           }
+        }
+    }
+    
+#theme-2{
+    .container{
+       .left{
+          background-color:$color2 ; 
+       }
+       .right{
+           background-color:darken($color2,10%);
+           .button{
+               background-color: darken($color2,40%);
+           }
+       }
+    }
+}

@@ -1,0 +1,47 @@
+button {
+  border-radius: 3px;
+  padding: 12px 15px 12px 15px;
+  background-color: #8bc34a;
+  border: 0;
+  min-width: 110px;
+  font-family: segoeUI SemiBold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+button.btn1 {
+  background-color: #8bc34a;
+  color: #ffffff;
+  border: 1px solid #8bc34a;
+}
+
+button.btn1:hover {
+  background-color: #9dce5d;
+  color: #999999;
+  border: 1px solid #9dce5d;
+}
+
+button.btn1:disabled {
+  background-color: #eeeeee;
+  color: #999999;
+  border: 1px solid #eeeeee;
+}
+
+button.btn2 {
+  background-color: #ffffff;
+  color: #2095f2;
+  border: 1px solid #2095f2;
+}
+
+button.btn2:hover {
+  background-color: #2095f2;
+  color: #ffffff;
+  border: 1px solid #2095f2;
+}
+
+button.btn2:disabled {
+  background-color: #ffffff;
+  color: #999999;
+  border: 1px solid #cccccc;
+}
+/*# sourceMappingURL=assign2.css.map */

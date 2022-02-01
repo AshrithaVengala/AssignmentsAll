@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <header>Registration Form</header>
+    <form>
+    <table>
+        <tr>
+            <td><label for="eid"> Employee ID</label></td><td> <input id="eid" type="number" min="10001" max="15000" autofocus required></td>
+        </tr>
+        <tr>
+            <td><label for="fname">First Name:</label></td><td><input type="text"  id="fname" required placeholder="First Name" size="3,15"></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td><td><input type="text" pattern="^[a-zA-Z]{5,25}+$" required></td>
+        </tr> 
+        <tr>
+            <td>Department:</td>
+            <td> 
+               <input type="radio" id="it" value="IT" name="department" required> <label for="it">IT</label><br>
+               <input type="radio" id="hr" value="HR" name="department" required> <label for="hr">HR</label><br> 
+               <input type="radio" id="finance" value="Finance" name="department" required> <label for="finance">Finance</label> <br> 
+                <input type="radio" id="admin" value="Admin" name="department" required> <label for="admin">Admin</label>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Date Of Joining:</td><td>  <input type="date" max="01-14-2022" required placeholder="mm/dd/yy"></td>
+        </tr> 
+        <tr>
+            <td>Email:</td><td> <input type="email" required></td>
+        </tr>
+        <tr>
+            <td>Contact No:</td><td> <input  required type="number" pattern="^[1-9]{1}[0-9]{9}"></td>
+        </tr>
+        <tr>
+            <td>Address:</td><td><input type="text" required></td>
+        </tr>
+         <tr>
+            <td>Training Progras to be attended</td>
+            <td> 
+                <label><input type="checkbox" required >Web Basics</label><br>
+                <label><input type="checkbox" required >C#</label><br>
+                <label><input type="checkbox" required >Entity Framework</label><br>
+               <label><input type="checkbox" required >ASP.NET MVC</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="location.href='success.html'" value="Register"> Register</button>
+            
+            <button value="cancel" onclick=" window.location.reload()">Cancel</button></td>
+        </tr>
+    </table>
+    </form>
+
+    
+</body>
+</html>

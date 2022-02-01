@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="canvasSmiley.css">
+</head>
+<body>
+     <canvas id="canvas" width="400px" height="600px" >
+     alternative for not supported browsers if it is not supported
+    </canvas>
+<script type="text/javascript">
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+     var ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.arc(75, 75, 50, 0, Math.PI * 2, true); 
+    ctx.moveTo(110, 75);
+    ctx.arc(75, 75, 35, 0, Math.PI, false);
+    ctx.moveTo(65, 65);
+    ctx.fillStyle= "yellow";
+    ctx.arc(60, 65, 5, 0, Math.PI * 2, true);
+    ctx.moveTo(95, 65);
+    ctx.arc(90, 65, 5, 0, Math.PI * 2, true);
+    ctx.stroke();
+  }
+
+
+</script>
+    
+</body>
+</html>

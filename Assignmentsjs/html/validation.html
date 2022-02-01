@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/error.css">
+</head>
+<body>
+    <h3>Welcome you are using<div id="browser"></div> </h3>
+    <div id="time"></div>
+    <div onload="time()"></div>
+    <form action="success.html">
+    <table>
+    <tr>
+     <td><label for="fname">First Name</label> </td>  <td><input type="text" id="fname" required></td><td id="errorFname"></td></tr>
+    <tr><td> <label for="lname">Last Name</label></td><td><input type="text" id="lname" required></td> <td id="errorLname"></td></tr> 
+    <tr> <td> <label for="email">Email Address</label></td>  <td><input type="text" id="email" required></td><td id="errorEmail"></td> </tr> 
+     <tr> <td><label for="dob">Date of Birth</label></td> <td> <input type="text"  id="dob" required></td> <td id="errorDate"></td> </tr>
+     <tr>
+        <td>Hobby</td> 
+     <td><input type="checkbox" name="check[]" id="reading" onclick="writer()" > <label for="reading">Reading</label><br>
+        <input type="checkbox" name="check[]"  id="watching" checked> <label for="watching">Watching Movies</label><br>
+        <input type="checkbox" name="check[]" id="photography" > <label for="photography">Photography</label>
+    </td>
+    <td id="msg"></td>
+         
+     </tr> 
+     <tr id="writer"></tr>
+     <tr>
+         <td> <input type="submit" onclick=" return validate()" value="Submit"></td>
+         <td> <input type="reset" value="Reset"></td>
+     </tr> 
+    </table>  
+    </form>
+
+ <script src="../js/validation.js"></script>   
+</body>
+</html>

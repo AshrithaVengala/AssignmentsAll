@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>click on TryIT to get your location</p>
+    <button onclick="geoLocation()">Try It</button>
+    <p id="geo"></p>
+    <script>
+        var v = document.getElementById('geo'); // method to find the element by id
+        function geoLocation(){
+            if(navigator.geolocation){ // navigator is provide by the browser
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+            }else{
+                v.innerHTML="geolocationis not supported in your browser";
+
+            }
+
+        }
+        function showPosition(position){
+            v.innerHTML="latitude  "+position.coords.latitude+"  Longitude"+position.coords.longitude;
+        }
+    </script>
+</body>
+</html>

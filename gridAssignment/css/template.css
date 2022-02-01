@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+}
+.page{
+    display:grid;
+    width: 100%;
+    width:70%;
+    background-color: white;
+    margin: auto;
+    grid-template: "head head head" 
+                    "nav nav nav" 
+                    "article article aside" 
+                    "foot foot foot" ;
+                    grid-template-rows: 1fr 4fr 4fr 1fr;
+                    
+}
+header{
+    background-color: cyan;
+    grid-area: head;
+}
+nav{
+    background-color: palevioletred;
+    grid-area: nav;
+}
+article{
+    background-color: rgb(235, 235, 97);
+    grid-area: article;
+}
+aside{
+    background-color:rgb(235, 235, 97) ;
+    grid-area: aside;
+}
+footer{
+    background-color: skyblue;
+    grid-area: foot;
+}
+*{
+    padding: 20px;
+    margin :5px;
+    
+}

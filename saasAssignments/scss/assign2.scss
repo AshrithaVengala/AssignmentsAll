@@ -1,0 +1,52 @@
+$color2: #9dce5d;
+$color1: #8bc34a;
+$color3:#eeeeee;
+$scolor1:#ffffff;
+$scolor2:#2095f2;
+@mixin commonbutton() {
+    border-radius:3px;
+    padding:12px 15px 12px 15px;
+    background-color: #8bc34a;
+    border: 0;
+    min-width: 110px;
+    font-family: segoeUI SemiBold;
+    font-size: 16px;
+    color:#ffffff;
+}
+ 
+button{
+    @include commonbutton();
+    &.btn1{
+        background-color:$color1;
+        color: #ffffff;
+        border: 1px solid $color1;
+        &:hover{
+            background-color:$color2;
+            color:#999999;
+            border:1px solid $color2;
+         }
+        &:disabled{
+            background-color:$color3;
+            color:#999999;
+            border: 1px solid $color3;
+         }
+
+    }
+    &.btn2{
+        background-color: $scolor1;
+        color:$scolor2;
+        border: 1px solid $scolor2;
+        &:hover{
+            background-color: $scolor2;
+            color:$scolor1;
+            border:1px solid $scolor2;
+        }
+        &:disabled{
+            background-color: $scolor1;
+            color:#999999;
+            border:1px solid #cccccc;
+        }
+
+    }
+
+}

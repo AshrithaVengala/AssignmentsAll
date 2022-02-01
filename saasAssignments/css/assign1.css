@@ -1,0 +1,29 @@
+input {
+  width: 300px;
+  height: 36px;
+  border-radius: 3px;
+  border: 1px solid;
+  font-style: SegoUI;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+input.input1 {
+  color: #666666;
+  background-color: #ffffff;
+  border-color: #ccc;
+}
+
+input.input2 {
+  background-color: #eeeeee;
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #cccccc;
+}
+
+input.input3 {
+  background-color: #fde7e1;
+  color: #f44336;
+  border-color: #f44336;
+}
+/*# sourceMappingURL=assign1.css.map */

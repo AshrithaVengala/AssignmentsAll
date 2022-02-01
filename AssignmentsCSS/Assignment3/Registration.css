@@ -1,0 +1,13 @@
+header{
+    font-weight: bold;
+    background-color: gray;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px
+}
+table,td{
+    align-content: center;
+    border: 1px solid;
+    margin-left: 450px;
+    font-size: 20px;
+}

@@ -1,0 +1,23 @@
+@import url(mixin/commoninput);
+input{
+   @include common();
+    &.input1{
+        color:#666666;
+        background-color: #ffffff;
+        border-color: #ccc;
+    }
+    &.input2{
+        background-color: #eeeeee;
+        color: #999999;
+        cursor: not-allowed;
+        border-color:#cccccc;
+    }
+    &.input3{
+        background-color:#fde7e1;
+        color:#f44336;
+        border-color: #f44336;
+
+        
+    }
+}
+

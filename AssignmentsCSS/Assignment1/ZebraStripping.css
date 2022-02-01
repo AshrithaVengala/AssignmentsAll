@@ -1,0 +1,11 @@
+table{
+    border: 2px solid black;
+}
+.even{
+    background-color: greenyellow;
+}
+th{
+    font-weight: bold;
+    background-color: gray
+    
+}
