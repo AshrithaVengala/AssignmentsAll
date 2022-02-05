@@ -5,10 +5,19 @@ if(flg==true){
     document.getElementById("writer").innerHTML="<td><label for='writer'>Favourite Writer</label></td> <td><input type='text'></td>";//addthe html elements into columns
 }
 }
+//setting a variable intial value as zero
+var intime=0;
+function prtMsg(){
+    document.getElementById('time').innerHTML="Your in this page since "+intime+" minutes"
+}
+// creating a timing function to show the in time on the page
 function time(){
+    window.setInterval(prtMsg,1000);
     
 
 }
+// the time function call
+time();
 function validate(){
     var fName=document.getElementById("fname");// to get the elements
     var lName=document.getElementById("lname");
